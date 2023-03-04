@@ -34,15 +34,15 @@ export const ContactUs = () => {
 
 
   return (
-    <div className='flex flex-col items-center w-full my-3 sm:my-6 h-1/2 '>
-    
-        <motion.h1 initial ={{x:-200} } animate={{x:0}} transition = {{duration:0.6}}  className='px-2 text-6xl font-semibold text-center text-white sm:text-8xl' >Contacto</motion.h1>
-        <motion.form initial ={{x:200} }animate={{x:0,}} transition = {{duration:0.6}}  className='grid items-center w-full grid-cols-1 gap-4 px-3 mt-6 sm:mt-10 sm:px-0 sm:w-1/2' ref={form} onSubmit={sendEmail}>
+    <div className='flex flex-col items-center w-full my-3 sm:my-4 h-1/2 '>
+     
+        <motion.h1 initial ={{opacity: 0}} animate= {{ opacity:1 }} transition = {{duration: 0.6}}  className='px-2 font-semibold text-center text-white bg-gradient-to-r from-indigo-500 via-violet-500 to-violet-900 text-7xl sm:text-7xl' >Contacto</motion.h1>
+        <motion.form initial ={{x:200} }animate={{x:0}} transition = {{duration:0.6}}  className='grid items-center w-full grid-cols-1 gap-5 px-3 mt-6 sm:mt-16 sm:px-0 sm:w-2/5' ref={form} onSubmit={sendEmail}>
              
-               <input  onChange={(e)=>setName(e.target.value)}  placeholder='Escriba su nombre'  className='h-10 p-2 rounded-2xl' type="text" name="user_name" />
-               <input  onChange={(e)=>setEmail(e.target.value)}  placeholder='Email al cual respondere'  className='h-10 p-2 caret-violet-900 rounded-2xl' type="email" name="user_email" />
+               <input  onChange={(e)=>setName(e.target.value)}  placeholder='Escriba su nombre'  className='h-10 p-2 rounded-xl' type="text" name="user_name" />
+               <input  onChange={(e)=>setEmail(e.target.value)}  placeholder='Email al cual respondere'  className='h-10 p-2 caret-violet-900 rounded-xl' type="email" name="user_email" />
           
-             <textarea onChange={(e)=>setText(e.target.value)} minLength= {10} placeholder="Escriba aqui su mensaje" className='p-2 rounded-2xl h-96 max-h-44 min-h-10' name="message" />
+             <textarea onChange={(e)=>setText(e.target.value)} minLength= {10} placeholder="Escriba aqui su mensaje" className='p-2 rounded-xl h-96 max-h-44 min-h-10' name="message" />
              
                 {error ===true && 
                 

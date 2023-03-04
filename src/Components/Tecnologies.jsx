@@ -9,12 +9,13 @@ import { SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaGit } from "react-icons/fa";
 import {FaSass} from 'react-icons/fa';
+import {SiFramer} from 'react-icons/si'
 
 
 function Tecnologies() {
   return (
     <div>
-        <div className='flex flex-wrap justify-center gap-5 py-6 text-xl sm:py-0 '>
+        <div className='flex flex-wrap justify-center gap-5 py-6 mt-6 text-xl sm:py-0 '>
         
         <Tooltip anchorId="html-logo" content="HTML" style={{ color: 'rgb(255, 97, 0)' }}/>
          <a id='html-logo' ><FaHtml5  className='text-6xl text-violet-900'/></a>
@@ -30,6 +31,9 @@ function Tecnologies() {
          <a id='git-logo'><FaGit className='text-6xl text-violet-900'/></a>
          <Tooltip anchorId="sass-logo" content="Sass" style={{ color: 'rgb(250,49,162)' }}/>
          <a id='sass-logo'><FaSass className='text-6xl text-violet-900'/></a>
+         <Tooltip anchorId="framer-logo" content="FramerMotion" style={{ color: 'rgb(250,49,162)' }}/>
+         <a id='framer-logo'><SiFramer className='text-6xl text-violet-900'/></a>
+         
          
         </div>
     </div>
