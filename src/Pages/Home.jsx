@@ -6,11 +6,11 @@ import Menu from '../Components/Menu'
 
 
 function Home() {
- 
+
    return (
     <div>
         <Header></Header>
-        <Menu className="hidden"/>
+        <Menu/>
         <Main/>
         <div className='absolute bottom-0 w-full text-center'>
             <Footer></Footer>

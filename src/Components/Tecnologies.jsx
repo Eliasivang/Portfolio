@@ -1,7 +1,6 @@
 import React from 'react';
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
-import { IconContext } from "react-icons";
 import { FaReact } from 'react-icons/fa';
 import { FaHtml5 } from 'react-icons/fa';
 import { FaCss3Alt } from 'react-icons/fa';

@@ -1,14 +1,10 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
 import AboutMe from '../Components/AboutMe' 
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 
 
 function About() {
-
- 
-
   return (
     <div>
         <Header/>
