@@ -11,7 +11,6 @@ import Proyects from './Components/Proyects';
 function App() {
   
   return (
-  
     <div className='w-full'>
     <Header/>
     <Main/>
@@ -19,9 +18,7 @@ function App() {
     <Proyects/>
     <ContactUs/>
     <Footer/>
-    </div>
- 
-    
+    </div> 
   );
 }
 
