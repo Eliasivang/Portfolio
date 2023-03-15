@@ -1,5 +1,5 @@
 body{
-  background-image: url(/public/fondo57.jpg);
+  background-image: url(/src/assets/images/fondo57.jpg);
   background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -13,7 +13,7 @@ body{
     scroll-behavior: smooth;
   }
   body::-webkit-scrollbar-thumb{
-    background:rgb(76 29 149);
+    background:#4ADE80;
     border-radius: 10px;
   }
 

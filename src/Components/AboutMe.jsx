@@ -1,29 +1,36 @@
 import React from 'react'
+import meImg from '../assets/images/eigv.png'
 import { motion } from 'framer-motion'
 import Tecnologies from './Tecnologies'
 
 
+
 function AboutMe() {
   return (
-    <motion.div initial ={{x:-200} }animate={{x:0}} transition = {{duration:0.6}}   className='flex flex-col items-center justify-center px-5 sm:p-0 '>
-        <div className='w-full pr-0 mt-6 shadow-2xl mb-28 sm:mb-8 sm:mt-20 sm:rounded-l-full sm:pr-6 sm:w-4/5 sm:backdrop-blur-3xl '>
-            <div className='flex flex-col items-center justify-center w-full gap-4 sm:flex-row'>
-                <div className='justify-center overflow-hidden rounded-full '>
-                         <img src='me.png' alt="profile-image"className='transition duration-700 ease-in-out rounded-full hover:scale-110'/>
-                </div>
-                 <div className='flex flex-col items-center justify-center w-full gap-8 py-3 text-center sm: py:0 backdrop-blur-3xl rounded-3xl sm:rounded-none sm:w-2/3'>
-                         <p className='text-lg text-white rounded sm:text-2xl font-extralight '>Hola! Mi nombre es Elias Ivan Gonzalez, vivo en la provincia de Buenos Aires y actualmente soy Estudiante de Administracion de Empresas. Con un gran interes por el desarrollo web y
-				                  ganas de aprender cosas nuevas dia a dia para especializarme en el area.</p>
-                        <button className='h-12 text-white rounded-full text-md sm:text-xl w-28 bg-gradient-to-r from-blue-400 via-violet-600 to-violet-900'>Ver CV</button>
-                        <p className='text-lg text-white rounded sm:text-2xl font-extralight'>Actualmente, los leguajes/herramientas que domino y uso en mis proyectos son los que se pueden observar en la derecha, aunque siempre estoy aprendiendo algo nuevo!</p>
-                        <Tecnologies/>
-                    
-                        
-                </div>
-               
-            </div>
+    <div className='container flex flex-col h-full px-3 m-auto mt-6 lg:w-full '>
+      <h1 className='font-bold text-center text-green-400 text-7xl font-bebas'>Sobre Mi. </h1>
+      <motion.div initial ={{x:200} }animate={{x:0,}} transition = {{duration:0.6}}  className='lg:flex items-center justify-center p-3 lg:p-0 grid h-auto gap-6 my-32 rounded-2xl bg-neutral-900 lg:h-[380px] shadow-2xl'>
+        <div className='w-[470px] overflow-hidden lg:hidden rounded-full m-auto'>
+            <img className='rounded-full  hover:scale-110 transition-all duration-500 w-[470px]' src={meImg} alt="me" />
         </div>
-    </motion.div>
+        <div className='flex flex-col items-center justify-center h-full gap-8 p-3 lg:w-1/3'>
+            <p className='p-2 font-light text-center text-white lg:text-lg text-md'>Lorem ipsum dolor sit dasssssssssssssssdadasdad as das dasd asd ut debitis velit sunt ab hic, error corporis. Consequatur. Esse eligendi incidunt illo cumque libero perspiciatis, pariatur cum accusamus, sequi totam asperiores natus rem impedit. Alias natus officiis sapiente rem veritatis?</p>
+            <div className='flex items-center justify-center w-full' >
+            <button className='w-32 h-12 p-2 text-xl text-center text-black bg-green-400 rounded hover:shadow-xl hover:text-white hover:shadow-black hover:bg-violet-900 font-bebas '> DESCARGAR CV</button>
+            </div>
+            </div>
+        <div className='w-[470px] overflow-hidden lg:block hidden rounded-full'>
+            <img className='rounded-full  hover:scale-110 transition-all duration-500 w-[470px]' src={meImg} alt="me" />
+        </div> 
+        <div className='flex flex-col items-center justify-center w-full h-full gap-8 p-3 lg:w-1/3'>
+          <p className='font-light text-center text-white lg:text-lg text-md '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum laborum aliquam accusamus aliquid ratione molestiae quae magni fuga, similique tenetur dolores maiores ex modi! Iure harum ipsa a libero?</p>
+          <Tecnologies/>
+        </div>
+
+
+      </motion.div>
+     
+    </div>
       
 
   )
