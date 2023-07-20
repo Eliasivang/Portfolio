@@ -27,7 +27,7 @@ function AboutMe() {
             <img className='rounded-full  hover:scale-110 transition-all duration-500 w-[470px]' src={meImg1} alt="me" />
         </div> 
         <div className='flex flex-col items-center justify-center w-full h-full gap-12 xl:gap-8 xl:w-1/3'>
-          <p className='font-light text-center text-white xl:text-lg text-md'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum laborum aliquam accusamus aliquid ratione </p>
+          <p className='font-light text-center text-white xl:text-lg text-md'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum laborum aliquam accusamus aliquid ration </p>
           <Tecnologies/>
         </div>
       </motion.div>
