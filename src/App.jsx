@@ -4,16 +4,16 @@ import AboutMe from './Components/AboutMe';
 import { ContactUs } from './Components/ContactUs';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import Main from './Components/Main';
+import Hero from './Components/Hero';
 import Proyects from './Components/Proyects';
 
 
 function App() {
   
   return (
-    <div className='w-full'>
+    <div className='font-bebas'>
     <Header/>
-    <Main/>
+    <Hero/>
     <AboutMe/>
     <Proyects/>
     <ContactUs/>

@@ -1,9 +1,11 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-image: url(/src/assets/images/fondo57.jpg);
   background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-  font-family: "Roboto Slab", serif;
+  background-size: cover;
+  padding-top: 96px;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -11,6 +13,7 @@ body{
     width: 12px;
     background: rgba(0,0,0,0.9);
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
   }
   body::-webkit-scrollbar-thumb{
     background:#4ADE80;

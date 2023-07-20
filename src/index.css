@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    background-image: url(/src/assets/images/fondo57.jpg);
+    background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+    body::-webkit-scrollbar{
+      width: 12px;
+      background: rgba(0,0,0,0.9);
+      scroll-behavior: smooth;
+    }
+    body::-webkit-scrollbar-thumb{
+      background:#4ADE80;
+      border-radius: 10px;
+    }
