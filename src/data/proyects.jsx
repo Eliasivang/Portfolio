@@ -5,6 +5,7 @@ import devFinder from "../assets/images/definder.png"
 import crocheteando from "../assets/images/crocheteando.png"
 import controlGastos from "../assets/images/gastos.png"
 import weatherApp from "../assets/images/weatherApp.png"
+import tictactoe from "../assets/images/tictactoe.png"
 
 export const proyects = [{
     title: "Dev Finder",
@@ -53,4 +54,12 @@ export const proyects = [{
     tecnologies: "",
     urlCode:"https://github.com/Eliasivang/Weather-App",
     urlDeploy:"https://eig-weather-app.netlify.app/"
+},
+{
+    title: "TIC TAC TOE",
+    image: tictactoe,
+    description:"En esta web prodremos jugar al clasico tic tac toe, tendremos la opcion de resetear la partida, visualizar los turnos y cuenta con mensajes para el jugador/es que ganen la partida",
+    tecnologies:"",
+    urlCode: "https://github.com/Eliasivang/tic-tac-toe",
+    urlDeploy: "https://tic-tac-97bbb3ycb-eliasivang.vercel.app/"
 }]
